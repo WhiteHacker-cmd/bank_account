@@ -26,7 +26,7 @@ void bubbleSort(int arr[], int n)
      
     // Last i elements are already in place
     for (j = 0; j < n-i-1; j++)
-        if (arr[j] > arr[j+1])
+        if (arr[j].ac_no > arr[j+1].ac_no)
             swap(&arr[j], &arr[j+1]);
 }
 
@@ -34,7 +34,7 @@ void printArray(int arr[], int size)
 {
     int i;
     for (i = 0; i < size; i++)
-        cout << arr[i] << " ";
+        cout << arr[i].ac_no << " ";
     cout << endl;
 }
 
